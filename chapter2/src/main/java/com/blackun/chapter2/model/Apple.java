@@ -1,16 +1,16 @@
 package com.blackun.chapter2.model;
 
 public class Apple {
-	private int weight;
+	private Integer weight;
 	private Color color;
 
 
-	public Apple(int weight, Color color){
+	public Apple(Integer weight, Color color){
 		this.weight = weight;
 		this.color = color;
 	}
 
-	public int getWeight() {
+	public Integer getWeight() {
 		return weight;
 	}
 
