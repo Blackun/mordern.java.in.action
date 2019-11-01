@@ -1,0 +1,8 @@
+@startuml
+(WordCounter\nlastSpace == false) as (UC1)
+(WordCounter\nlastSpace == true) as (UC2)
+(UC1)-->(UC2) : c 는 공백
+(UC1)<--(UC2) : c 는 공백이 아님\ncounter 증가
+(UC1)-->(UC1) : c 는 공백이 아님
+(UC2)->(UC2) : c 는 공백
+@enduml
