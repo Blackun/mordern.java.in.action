@@ -143,7 +143,7 @@ public class RefactoringTest {
 		}
 
 		logger.info("dishNames : {}", dishNames);
-	
+
 		// 스트림 API를 이용하면 문제를 더 직접적으로 기술할 수 있을 뿐 아니라
 		// 쉽게 병렬화 할 수 있다.
 		dishNames = menu.parallelStream()
@@ -153,5 +153,11 @@ public class RefactoringTest {
 
 		logger.info("dishNames : {}", dishNames);
 	}
+
+	boolean variableName(String name) {
+		return name.matches("^[A-Za-z0-9_+]*$");
+	}
+
+
 
 }
